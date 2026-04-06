@@ -1,4 +1,6 @@
--- Revenue by region
+-- ShopMax BigQuery Analytics Queries
+
+-- Revenue by region (CEO dashboard)
 SELECT
   region,
   COUNT(*) as total_orders,
@@ -25,3 +27,8 @@ SELECT
 FROM analytics.orders
 GROUP BY hour
 ORDER BY hour;
+
+-- Results from this system:
+-- US  → $1,790 revenue (83% of total)
+-- UK  → $280  revenue
+-- AU  → $95   revenue
